@@ -31,6 +31,7 @@ class Quiz {
 
     // 5. checkAnswer(answer)
     checkAnswer(answer) {
+        console.log('checking answer...')
         if (answer === this.questions[this.currentQuestionIndex].answer) {
             this.correctAnswers++
         }
