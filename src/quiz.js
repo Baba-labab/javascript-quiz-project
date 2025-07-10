@@ -32,10 +32,13 @@ class Quiz {
     // 5. checkAnswer(answer)
     checkAnswer(answer) {
         console.log('checking answer...')
+         console.log("Answer submitted:", answer);
+        console.log("Correct answer:", this.questions[this.currentQuestionIndex].answer);
+        
         if (answer === this.questions[this.currentQuestionIndex].answer) {
             this.correctAnswers++
         }
-        return this.correctAnswers;
+         return this.correctAnswers;
     };
 
     // 6. hasEnded()
